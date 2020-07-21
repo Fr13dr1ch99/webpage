@@ -27,6 +27,7 @@ function initSkills() {
 
   addSkillHeader("Administration");
   addSkill("Linux", 60);
+  addSkill("FreeBSD", 40, "--color-freebsd");
   addSkill("Bash", 80, "--color-bash");
   addSkill("NGINX", 60, "--color-nginx");
   addSkill("Apache", 70, "--color-apache");
