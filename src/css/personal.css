@@ -1,0 +1,10 @@
+#personal > header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#personal > section {
+  height: 70vh;
+}

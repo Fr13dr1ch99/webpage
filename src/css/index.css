@@ -1,0 +1,74 @@
+:root {
+  --color-primary: #41b09d;
+  --color-text-background: #FFFFFF;
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+  --color-accent: #84aec3;
+  --color-accent-light: #95c5dd;
+  --color-accent-ultralight: #CFD8DC;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+body[dark] {
+  --color-primary: #1e3a4c;
+  --color-text-background: #212121;
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #EEEEEE;
+  --color-accent: #607D8B;
+  --color-accent-light: #7396a7;
+  --color-accent-ultralight: #CFD8DC;
+  background-color: #121212;
+  color: #FFF;
+}
+
+
+.card {
+  margin: auto;
+  margin-top: 5%;
+  height: 90%;
+  width: 90vw;
+  max-width: 600px;
+  background-color: var(--color-text-background);
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
+  color: var(--color-text-primary);
+  transition: 0.75s;
+  animation: slide 0.5s forwards;
+  transform: rotateY(90deg);
+}
+
+@keyframes slide {
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+
+h2 {
+  color: var(--color-text-secondary);
+}
+
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+
+.backBtn {
+  all: unset;
+  position: absolute;
+  top: 0;
+  left: 0.5em;
+  font-size: 3em;
+  border-radius: 1em;
+  cursor: pointer;
+}
